@@ -6,3 +6,13 @@ export interface UserType {
   isloggedin: boolean;
   password: string;
 }
+
+export interface ProductType {
+  brand: string;
+  category: string;
+  id: number;
+  image: string;
+  name: string;
+  price: number;
+  tag: string;
+}

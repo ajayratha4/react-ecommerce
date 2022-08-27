@@ -4,7 +4,7 @@ import ApplicationLayout from "Layouts/ApplicationLayout";
 import { getUser } from "utils/localStorage";
 
 const PrivateRoute = () => {
-  const userid = true || getUser();
+  const userid = getUser();
 
   return userid ? (
     <ApplicationLayout>

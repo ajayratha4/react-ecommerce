@@ -20,7 +20,7 @@ const Login = () => {
   const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
-    userName: "",
+    username: "",
     password: "",
   });
 
@@ -69,8 +69,8 @@ const Login = () => {
             <TextField
               required
               fullWidth
-              value={formData.userName}
-              onChange={handleOnChange("userName")}
+              value={formData.username}
+              onChange={handleOnChange("username")}
               label="User Name"
             />
           </Grid>
