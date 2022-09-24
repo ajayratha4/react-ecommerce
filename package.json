@@ -28,6 +28,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "sh ./deploy.sh",
+    "prod": "GENERATE_SOURCEMAP=false cross-env NODE-ENV=production npm run build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -51,6 +53,7 @@
   },
   "devDependencies": {
     "@types/lodash": "^4.14.184",
+    "cross-env": "^7.0.3",
     "eslint": "^8.21.0"
   }
 }
